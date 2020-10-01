@@ -1,30 +1,39 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <navigation></navigation>
+    <div class="container-fluid p-5 flex justify-between">
+      <div class="w-full mx-auto min-h-screen m-3">
+        <router-view></router-view>
+      </div>
+    </div>
+
   </div>
-  <router-view/>
 </template>
+<script>
+import Navigation from "@/components/Navigation";
 
+export default {
+  name: 'App',
+  data () {
+    return {
+      Countries : []
+    }
+  },
+  components : {
+    Navigation
+  },
+
+  created() {
+
+  },
+
+  methods : {
+    fetchCountries() {
+
+    }
+  }
+}
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Index from "@/views/Index";
+import Local from "@/views/Local";
+import Countries from "@/views/Countries";
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Index',
+    component: Index
+  },
+  {
+    path: '/local',
+    name: 'Local',
+    component: Local
+  },
+  {
+    path: '/countries',
+    name: 'Countries',
+    component: Countries
   },
   {
     path: '/about',
