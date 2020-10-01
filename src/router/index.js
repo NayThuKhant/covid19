@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from "@/views/Index";
-import Local from "@/views/Local";
 import Countries from "@/views/Countries";
 
 const routes = [
@@ -8,11 +7,6 @@ const routes = [
     path: '/',
     name: 'Index',
     component: Index
-  },
-  {
-    path: '/local',
-    name: 'Local',
-    component: Local
   },
   {
     path: '/countries',

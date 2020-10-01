@@ -5,11 +5,11 @@
       <div class="w-full h-12 flex bg-green-200 px-5 mb-5 items-center rounded-full bg-gray-200"
            style="background: white">
         <div class="flex-1">
-          <input v-model="search_value" type="text" class="w-full h-12 focus:outline-none"
+          <input id="search" v-model="search_value" type="text" class="w-full h-12 focus:outline-none"
                  placeholder="Search...">
         </div>
         <div class="px-2">
-          <i class="fa fa-search" aria-hidden="true" style="font-size: 1.5rem"></i>
+          <label for="search"><i class="fa fa-search" aria-hidden="true" style="font-size: 1.5rem"></i></label>
         </div>
       </div>
       <div>
@@ -101,13 +101,11 @@ export default {
     fetchGlobalData() {
       window.axios.get('https://api.covid19api.com/summary')
           .then((response) => {
-            console.log(response.data)
             this.global = response.data.Global
             this.global.Country = 'Global'
             this.countries = response.data.Countries
 
             this.selected_value = this.global
-
             this.search()
           })
           .catch(e => {

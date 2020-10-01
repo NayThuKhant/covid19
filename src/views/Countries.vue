@@ -2,11 +2,11 @@
   <div class="w-full flex flex-col -mt-2">
     <div class="w-full flex bg-white px-10 mb-5 items-center rounded-full bg-gray-200">
       <div class="flex-1">
-        <input @keyup="search" v-model="search_value" type="text" class="w-full h-12 focus:outline-none bg-gray-200"
+        <input id="search" @keyup="search" v-model="search_value" type="text" class="w-full h-12 focus:outline-none bg-gray-200"
                placeholder="Search...">
       </div>
       <div class="px-4">
-        <i class="fa fa-search" aria-hidden="true" style="font-size: 1.5rem"></i>
+        <label for="search"><i class="fa fa-search" aria-hidden="true" style="font-size: 1.5rem"></i></label>
       </div>
     </div>
 

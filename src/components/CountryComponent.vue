@@ -1,12 +1,12 @@
 <template>
   <div class="w-full flex flex-col border-b border-gray-400 select-none cursor-pointer">
-    <div class="flex p-4 justify-between hover:bg-gray-300" @click="data_expended = !data_expended" v-if="header">
+    <div class="flex p-2 justify-between items-center hover:bg-gray-300" @click="data_expended = !data_expended" v-if="header">
       <img class="h-6" :src="`https://www.countryflags.io/${country.CountryCode}/flat/64.png`">
-      <div class="flex flex-1 justify-between">
-        <span v-text="country.Country" class="px-3"></span>
-        <span class="" v-text="country.TotalConfirmed"></span>
+      <div class="flex flex-1 justify-between items-center">
+        <span v-text="country.Country" class="pl-2 lg:text-lg md:text-base text-sm"></span>
+        <span class="lg:text-lg md:text-base text-sm" v-text="country.TotalConfirmed"></span>
       </div>
-      <i class="fa fa-angle-right pl-8 pr-2" aria-hidden="true"></i>
+      <i class="fa fa-angle-right pl-2" aria-hidden="true"></i>
     </div>
 
     <div class="flex flex-wrap" v-if="data_expended">
@@ -55,9 +55,9 @@
 export default {
   name: "CountryComponent",
   props: {
-    country: [],
-    header: [],
-    expended: []
+    country: Object,
+    header: Boolean,
+    expended: Boolean
   },
   data() {
     return {
