@@ -21,9 +21,9 @@
 
 
         <div class="lg:hidden block">
-          <i class="cursor-pointer fa fa-bars px-10 lg:block hidden" aria-hidden="true" style="font-size: 2rem"
+          <i class="cursor-pointer fa fa-bars px-10" aria-hidden="true" style="font-size: 2rem"
              v-if="!expanded" @click="expanded=true"></i>
-          <i class="cursor-pointer fa fa-times px-10 lg:block hidden" aria-hidden="true" style="font-size: 2rem"
+          <i class="cursor-pointer fa fa-times px-10" aria-hidden="true" style="font-size: 2rem"
              v-if="expanded" @click="expanded=false"></i>
         </div>
       </ul>
