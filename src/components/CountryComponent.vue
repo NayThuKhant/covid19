@@ -12,14 +12,14 @@
     <div class="flex flex-wrap" v-if="data_expended">
       <div class="lg:w-1/3 md:w-full sm:w-full w-full mb-2 p-2">
         <div class="rounded-lg flex flex-col h-32 items-center justify-center bg-gray-200 text-gray-800 ">
-          <span>Total Confirmed</span>
-          <span class="text-3xl font-bold" v-text="country.TotalConfirmed"></span>
+          <span>New Confirmed</span>
+          <span class="text-3xl font-bold" v-text="country.NewConfirmed"></span>
         </div>
       </div>
       <div class="lg:w-1/3 md:w-full sm:w-full w-full mb-2 p-2">
         <div class="rounded-lg flex flex-col h-32 items-center justify-center bg-gray-200 text-gray-800 ">
-          <span>New Confirmed</span>
-          <span class="text-3xl font-bold" v-text="country.NewConfirmed"></span>
+          <span>Total Confirmed</span>
+          <span class="text-3xl font-bold" v-text="country.TotalConfirmed"></span>
         </div>
       </div>
       <div class="lg:w-1/3 md:w-full sm:w-full w-full mb-2 p-2">
