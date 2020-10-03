@@ -69,10 +69,10 @@
            style="position: fixed; left: 0; bottom: 0; width: 100%">
         <div class="flex-1 flex items-center w-full px-8">
           <div class="mx-2 cursor-pointer flex items-center flex-1 justify-center h-10 rounded-full outline-none" @click="select(global)" :class="{'bg-blue-500' : global === selected_value }">
-            <i class="fa fa-globe mr-2" aria-hidden="true" style="font-size: 2rem"></i><span>Global</span>
+            <i class="fa fa-globe mr-1" aria-hidden="true" style="font-size: 2rem"></i><span>Global</span>
           </div>
           <div class="mx-2 cursor-pointer flex items-center flex-1 justify-center h-10 rounded-full" @click="select(local)" :class="{'bg-blue-500' : local === selected_value }">
-            <img class="h-10 mr-2" :src="`https://www.countryflags.io/mm/flat/64.png`"><span>Myanmar</span>
+            <img class="h-10 mr-1" :src="`https://www.countryflags.io/mm/flat/64.png`"><span>Myanmar</span>
           </div>
         </div>
         <span class="text-sm text-red-300">updated on {{date}}</span>
