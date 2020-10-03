@@ -1,9 +1,9 @@
+import('@/assets/css/tailwind.css');
 import { createApp } from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import '@/assets/css/tailwind.css'
 
 window.axios = require("axios")
 

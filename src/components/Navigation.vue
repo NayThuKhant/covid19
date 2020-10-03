@@ -1,9 +1,9 @@
 <template>
   <div class="container-fluid flex flex-col sticky top-0 shadow-lg relative">
     <div class="container-fluid bg-gray-300 flex items-center">
-      <ul class="container mx-auto flex flex-wrap justify-between h-20 text-xl items-center select-none flex-1">
+      <ul class="container mx-auto flex flex-wrap justify-between h-16 text-xl items-center select-none flex-1">
         <a href="/" class="flex items-center jump">
-          <img src="https://img.icons8.com/plasticine/100/000000/coronavirus.png" class="w-12 h-12"/>
+          <img src="../../public/img/coronavirus.png" class="w-12 h-12"/>
           <span>COVID 19</span>
         </a>
 
@@ -31,7 +31,7 @@
 
     <div
         class="lg:hidden block container-fluid bg-gray-300 flex flex-col items-center absolute w-full transition duration-200 ease-in-out"
-        style="top:5rem" v-if="expanded">
+        style="top:4rem" v-if="expanded">
       <router-link @click="expanded=false" :to="{name : 'Index'}"
                    class="w-full flex justify-center items-center h-16 py-2 border-b border-white">
         <i class="fa fa-home mr-2" aria-hidden="true" style="font-size: 1.5rem"></i>HOME
@@ -83,5 +83,9 @@ export default {
 .jump {
   transform-origin: 50% 50%;
   animation: jump .5s linear alternate infinite;
+}
+
+.router-link-active{
+  color:green;
 }
 </style>

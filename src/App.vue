@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <navigation></navigation>
     <div class="container-fluid p-5 flex justify-between">
       <div class="w-full mx-auto min-h-screen m-3">
@@ -7,31 +7,29 @@
       </div>
     </div>
 
+
+
   </div>
 </template>
 <script>
 import Navigation from "@/components/Navigation";
 
+
 export default {
   name: 'App',
-  data () {
+  data() {
     return {
-      Countries : []
+      Countries: []
     }
   },
-  components : {
-    Navigation
+  components: {
+    Navigation,
+
   },
 
   created() {
 
   },
-
-  methods : {
-    fetchCountries() {
-
-    }
-  }
 }
 </script>
 <style>
